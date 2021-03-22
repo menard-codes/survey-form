@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Code-Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!-- span the code life to style later -->
+    <div class="title">
+        <h1 id="title">Sign Up</h1>
+        <p id="description">Become a member of <span id="code-life"><code>&lt;Code-Life/&gt;</code></span> <i class="fas fa-users"></i></p>
+    </div>
+
+    <form id="survey-form" action="">
+        <div class="field">
+            <label class="label" id="name-label" for="name">Name <i class="fas fa-user-tag"></i></label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="field">
+            <label class="label" id="email-label" for="email">Email <i class="fas fa-envelope-open-text"></i></label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="field">
+            <!-- Style the optional later using span -->
+            <label class="label" id="number-label" for="number">Age <i class="fas fa-birthday-cake"></i> <span class="optional">(optional)</span></label>
+            <input type="number" name="age" id="number" min="13" max="70" placeholder="Enter your Age">
+        </div>
+
+        <div class="field custom-select" style="width: 200px;">
+            <label class="label" for="dropdown">What is your job role? <i class="fas fa-user-tie"></i></label>
+            <select name="dropdown" id="dropdown">
+                <option>Select job role</option>
+                <option value="student">Student</option>
+                <option value="junior dev">Junior Dev</option>
+                <option value="senior dev">Senior Dev</option>
+                <option value="quality assurance">Quality Assurance</option>
+                <option value="sys admin">Sys Admin</option>
+                <option value="manager">Manager</option>
+                <option value="supervisor">Supervisor</option>
+            </select>
+        </div>
+
+        <div class="field input-group">
+            <div id="radio-label">
+                <p class="label">What's your coding background? <i class="fas fa-laptop-code"></i></p>
+            </div>
+            <div id="self-taught-input">
+                <input type="radio" id="self-taught" name="background" value="self-taught">
+                <label for="self-taught"><i class="fab fa-free-code-camp"></i> Self-taught</label>    
+            </div>
+            <div id="bootcamp-input">
+                <input type="radio" id="coding-bootcamp" name="background" value="coding-bootcamp">
+                <label for="coding-bootcamp"><i class="fas fa-users"></i> Coding Bootcamp</label>
+            </div>
+            <div id="student-input">
+                <input type="radio" id="college-student" name="background" value="college-student">
+                <label for="college-student"><i class="fas fa-user-graduate"></i> College Student</label>    
+            </div>
+        </div>
+
+        <div class="field input-group">
+            <div class="languages-label">
+                <p class="label">What programming languages do you know? <i class="fas fa-code"></i></p>
+            </div>
+            <div id="python-field">
+                <input type="checkbox" name="python" id="python" value="python">
+                <label for="python"><i class="fab fa-python"></i> Python</label>    
+            </div>
+            <div id="javascript-field">
+                <input type="checkbox" name="javascript" id="javascript" value="javascript">
+                <label for="javascript"><i class="fab fa-js-square"></i> Javascript</label>    
+            </div>
+            <div id="php-field">
+                <input type="checkbox" name="php" id="php" value="php">
+                <label for="php"><i class="fab fa-php"></i> php</label>    
+            </div>
+            <div id="java-field">
+                <input type="checkbox" name="java" id="java" value="java">
+                <label for="java"><i class="fab fa-java"></i> Java</label>    
+            </div>
+            <div id="other-field">
+                <input type="checkbox" name="other" id="other" value="other">
+                <label for="other">other</label>
+            </div>
+
+
+        </div>
+        <div class="field">
+            <!-- style optional later with span -->
+            <label class="label" for="about">About yourself <i class="far fa-address-card"></i> <span class="optional">(optional)</span></label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <button id="submit" type="submit">Sign Up <i class="fas fa-sign-in-alt"></i>
+        </button>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+
+
