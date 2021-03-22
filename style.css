@@ -13,12 +13,13 @@ html, body {
 
 #title {
     font-size: 7.7vw;
-    color: rgb(230, 101, 54);
-    font-family: 'Black Han Sans', sans-serif;
+    color: rgb(47, 165, 43);
+    font-family: 'Press Start 2P', cursive;
 }
 
 #description {
     font-size: 3.3vw;
+    color: rgb(103, 160, 101);
 }
 
 #code-life {
@@ -46,7 +47,7 @@ html, body {
         width: 40%;
     }
     #title {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     #description {
         font-size: 1.8vw;
